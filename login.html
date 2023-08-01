@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #Signh1 {
+            font-family: "Amazon Ember", Arial, sans-serif;
+            margin-bottom: 10px;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 1.2;
+        }
+
+        label {
+            display: block;
+            padding-left: 2px;
+            padding-bottom: 7px;
+            padding-top: 7px;
+            font-weight: 700;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        #button {
+            background: #ffd814;
+
+            width: 100%;
+            height: 100%;
+
+        }
+
+        #formid {
+            border-radius: 8px;
+            padding: 20px 26px;
+            border: 1px solid #ddd;
+        }
+
+        #container {
+            display: inline-block;
+            margin-left: 38%;
+            margin-right: 38%;
+            width: 350px;
+        }
+
+        #loginmail,
+        #pass {
+            background-color: #fff;
+            height: 31px;
+            padding: 3px 7px;
+            line-height: normal;
+            width: 100%;
+            margin-right: 0;
+            border: 1px solid #a6a6a6;
+            border-top-color: #949494;
+            border-radius: 3px;
+            box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 1px 0 rgba(0, 0, 0, .07) inset;
+            outline: 0;
+            margin: 0;
+            font-size: 100%;
+            vertical-align: middle;
+
+        }
+
+        .btn {
+            width: 100% !important;
+            background: #FFD814;
+            border-color: #FCD200;
+            color: #111;
+            border-style: solid;
+            border-width: 1px;
+            cursor: pointer;
+            display: inline-block;
+            padding: 0;
+            text-align: center;
+            text-decoration: none !important;
+            vertical-align: middle;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px 0 rgba(213, 217, 217, .5);
+            box-sizing: border-box;
+            font-size: 14px;
+            line-height: 33px;
+            margin-bottom: 15px;
+        }
+
+        #button {
+            border: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0066c0;
+            cursor: pointer;
+            line-height: 3;
+        }
+        a:hover{
+            color: brown;
+        }
+
+        #icon {
+            box-sizing: border-box;
+            text-align: center !important;
+            margin-bottom: 30px !important;
+            /* width: 100px; */
+            height: 80px;
+
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #foot{
+    
+    display: inline-block;
+    width: 75%;
+    height: 44px;
+    padding-left: 450px;
+    line-height: 8;
+
+        }
+        .footer{
+            width: 33%;
+        float: left;
+        font-size: small;
+       
+
+    }
+    #copyrights{
+        display: inline-block;
+        width: 100%;
+        line-height: 5;
+      
+        text-align: center;
+        
+        
+    }
+
+    .icon{
+        margin-bottom: 30px;
+    }
+
+    </style>
+   
+</head>
+
+<body>
+    <div  class="icon">
+        <img src="/resources/amazon.png" alt="amazon" width="200px" >
+    </div>
+
+    <div id="container">
+        <div id="formid">
+            <form action="">
+                <h1 id="Signh1">Sign in</h1>
+                <div id="">
+                    <label for="loginmail">Email or mobile phone number</label>
+                </div>
+                <input type="email" id="loginmail" name="email">
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="password">
+                <a>Forgot your password?</a>
+                <div class="btn">
+                    <button id="button">Sign in</button>
+                </div>
+                <input type="checkbox" >
+                <span>Keep me signed in. <a href="#" >Details</a></span>
+            </form>
+        </div>
+    </div>
+    <div id="foot">
+        <span class="footer" style="text-align:right; "> <a href="#">Conditions of Use</a> </span> 
+       <span class="footer" style="text-align: center;"><a href="#"> Privacy Notice </a></span>
+            <span class="footer" style="text-align: left;"><a href="#"> Help </a></span>
+    </div>
+    <div id="copyrights">
+        <span style="font-size: small;text-align: center;">&copy;1996-2023, Amazon.com, Inc. or its affiliates</span>
+    </div>
+</body>
+
+</html>
