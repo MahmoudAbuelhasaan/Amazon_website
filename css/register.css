@@ -35,12 +35,10 @@ input[type=email] {
     padding: 8px 20px;
     margin: 4px 18px;
     display: inline-block;
-    /* border: 1px solid #ccc; */
     border-radius: 4px;
     box-shadow: 5px 5px 5px 5px rgb(190, 190, 255);
     box-sizing: border-box;
     font-family: "Amazon Ember Arabic", Arial, sans-serif;
-    /* outline: none; */
 
 
 }
