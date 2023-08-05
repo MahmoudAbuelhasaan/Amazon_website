@@ -21,13 +21,12 @@
 
 <body>
 
-    <!-- first nav -->
 
     <nav class="navbar">
         <div class="navbar-container">
             <div class="logo">
 
-                <a href="#" class="navbar-logo"><img class="logo_img" src="resources/logo.png" alt="logo"></a>
+                <a href="index.html" class="navbar-logo"><img class="logo_img" src="resources/logo.png" alt="logo"></a>
                 <a href="#"><img src="./resources/egypt_logo.PNG" width="80px" alt=""></a>
 
 
@@ -53,7 +52,6 @@
         </div>
     </nav>
 
-    <!-- second nav -->
 
     <nav class="navbar2">
         <div class="navbar-container2">
@@ -110,7 +108,7 @@
 
 
  
- 
+ <!-- cards -->
     <div class="main6">
         <div class="card">
             <div class="content1">
@@ -213,9 +211,9 @@
 
     <div class="clear"></div>
 
-    <div class="container swiper">
+    <div class="container swiper" id="swiper-container">
         <div class="slide-container">
-            <div class="card-wrapper swiper-wrapper">
+            <div class="card-wrapper swiper-wrapper" id="card-wrapper">
                 <div class="card1 swiper-slide">
                     <div class="image-box">
                         <img src="resources/5.jpg" alt="">
@@ -285,7 +283,7 @@
 
 
 
-
+<!-- Footer -->
     
     <footer class="footer" >
 		<div class="container-footer">
@@ -339,6 +337,7 @@
     <script src="./JavaScript/main.js"></script>
     <script src="./JavaScript/swiper.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="pruducts.json" id="product-data" type="application/json"></script>
 </body>
 
 </html>
