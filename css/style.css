@@ -215,7 +215,7 @@ body{
 }
 .card1{
     background-color: #fff;
-    width: 300px !important;
+    width: 200px !important;
     height: 200px !important;
     
    
@@ -225,10 +225,12 @@ body{
 .card1 .image-box{
     
     width: 100% !important;
+    text-align: center;
 }
 .card1 .image-box img{
-    height: 100%;
-    width: 100% !important;
+    padding: 5px;
+   
+    width: 70% !important;
 
     border-radius: 8px 8px 0 0;
 }
@@ -366,7 +368,7 @@ a{
     font-size: 14px;
 }
 a:hover{
-    color: rgba(218, 16, 16, 0.484);
+    color: orange;
 }
 .cont{
     padding-bottom: 10px;
@@ -382,6 +384,7 @@ width: 40%;
     padding-top: 10px;
    
 }
+
 
 
 
