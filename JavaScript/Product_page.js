@@ -17,12 +17,15 @@ xhr.onreadystatechange = function () {
       // Populate product details on the page
       var productImage = document.getElementById("product_img");
       var productTitle = document.querySelector(".product-title");
+       var product_desc = document.getElementById('product_desc')
       // ... (other elements)
 
       // Populate the fetched product data into the page elements
+
       productImage.src = product.img;
       productImage.alt = product.name;
       productTitle.textContent = product.name;
+      product_desc.textContent = product.description;
       // ... (populate other elements)
     } else {
       console.error("Failed to fetch product data.");
