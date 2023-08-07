@@ -7,7 +7,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 body{
-    background-color: #bbbbbb;
+    background-color: #efefef;
     line-height: 1.5;
 }
 
@@ -163,12 +163,21 @@ body{
 /****************************************************************/
 /*******main div********/
 .card-wrapper{
-    max-width: 1400px;
+    width: 1400px;
     margin: 0 auto;
     display: flex;
+    padding:  30px 10px 30px 10px ;
+    width: 100%;
+    justify-content: space-around;
 }
 .product-images{
-    width: 50%;
+    width: 400px ;
+    display: block;
+  
+}
+
+#product_img{
+    width: 200px ;
     display: block;
   
 }

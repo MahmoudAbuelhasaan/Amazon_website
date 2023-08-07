@@ -10,10 +10,14 @@ function createCard(product) {
   img.alt = product.name;
   imageBox.appendChild(img);
   card.appendChild(imageBox);
-  // img.addEventListener("click",(this)=>{
-  //   this.addAttribute("data-id",product.id)
-
-  // })
+  img.addEventListener("click", function () {
+    var queryParams = new URLSearchParams();
+    queryParams.append("id", product.id);
+  
+    var url = './Product_page.html?' + queryParams.toString();
+    window.open(url, '_self');
+  });
+  card.style = "cursor: pointer;";
   return card;
 }
 
