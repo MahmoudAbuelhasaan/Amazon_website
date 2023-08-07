@@ -10,6 +10,10 @@ function createCard(product) {
   img.alt = product.name;
   imageBox.appendChild(img);
   card.appendChild(imageBox);
+  // img.addEventListener("click",(this)=>{
+  //   this.addAttribute("data-id",product.id)
+
+  // })
   return card;
 }
 
