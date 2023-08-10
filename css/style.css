@@ -191,7 +191,7 @@ body{
  
 }
 
-/* For screens between 601px and 900px wide */
+
 @media (min-width: 601px) and (max-width: 900px) {
     .navbar-links a {
         margin-left: 10px;
@@ -207,6 +207,7 @@ body{
     align-items: center;
 }
 
+/*    end of navbar style */
 
 .container{
   
@@ -236,7 +237,7 @@ body{
     border-radius: 8px 8px 0 0;
 }
 
-/******/
+/***   start of footer style ***/
 .row{
 	display: flex;
 	flex-wrap: wrap;
@@ -326,6 +327,8 @@ ul{
 
 	text-align: center;
 }
+
+/* end of footer style */
 
 
 .card{

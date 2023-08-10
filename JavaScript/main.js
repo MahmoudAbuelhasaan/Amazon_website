@@ -49,7 +49,16 @@ populateSwiper("card-wrapper4");
 populateSwiper("card-wrapper5");
 populateSwiper("card-wrapper6");
 
+function updateCartCount() {
+  var cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+  var cartCountElement = document.querySelector(".cart_num");
+  
+  cartCountElement.textContent = cartItems.length;
+}
 
+window.addEventListener("load", function () {
+  updateCartCount();
+});
 
 
 
