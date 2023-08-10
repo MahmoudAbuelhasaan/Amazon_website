@@ -184,3 +184,5 @@ but10.addEventListener("click", function () {
     document.getElementById("last3").style.display = "none"
 
 })
+
+// end of js help page
