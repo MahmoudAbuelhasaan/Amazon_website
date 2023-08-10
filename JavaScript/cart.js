@@ -50,6 +50,7 @@ xhr.onload = function () {
 xhr.send();
 
 
+
 function updateCartCount() {
     var cartItems = JSON.parse(localStorage.getItem("cart")) || [];
     var cartCountElement = document.querySelector(".cart_num");
@@ -90,3 +91,11 @@ function updateCartCount() {
 
 
   
+
+var checkoutBottun = document.getElementById('checkout-button');
+
+checkoutBottun.addEventListener('click',function(){
+    window.location.href = "pay.html";
+})
+
+
