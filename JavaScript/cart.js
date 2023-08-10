@@ -37,3 +37,10 @@ xhr.onload = function () {
     }
 };
 xhr.send();
+
+var checkoutBottun = document.getElementById('checkout-button');
+
+checkoutBottun.addEventListener('click',function(){
+    window.location.href = "pay.html";
+})
+
