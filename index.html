@@ -9,7 +9,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/all.min.css">
-  
+
+    <link rel="stylesheet" href="./css/slider.css">
+    
 </head>
 
 <body>
@@ -34,14 +36,14 @@
                 <a href="#">Link 3</a>
 
             </div>
-           <div class="cart_icon">
+            <div class="cart_icon">
 
-            <a href=""><img class="cart_img_icon" src="./resources/icon_cart.PNG" alt=""></a>
+                <a href=""><img class="cart_img_icon" src="./resources/icon_cart.PNG" alt=""></a>
 
-            <span class="cart_num">3</span>
-          
+                <span class="cart_num">3</span>
 
-           </div>
+
+            </div>
         </div>
     </nav>
 
@@ -49,8 +51,8 @@
 
     <nav class="navbar2">
         <div class="navbar-container2">
-           
-           
+
+
             <div class="navbar-links2">
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>
@@ -63,7 +65,7 @@
                 <a href="#">Link 3</a>
                 <a href="#">Link 2</a>
                 <a href="#">Link 3</a>
-                
+
 
             </div>
             <div class="free_d">
@@ -72,11 +74,31 @@
 
 
             </div>
-           
+
         </div>
     </nav>
 
-    <script src="main.js"></script>
+
+    <!-- slider -->
+
+    <!-- Martina -->
+
+    <div class="slider-content slider-display-container">
+        <img class="mySlides" src="resources/kitchen.jpg" alt="kitchen favourits" style="width:100%">
+        <img class="mySlides" src="resources/shop books.jpg" alt="Shop Books" style="width:100%">
+        <img class="mySlides" src="resources/shopgaming.jpg" alt="Shop Gaming Essentials" style="width:100%">
+        <img class="mySlides" src="resources/toys.jpg" alt="New Arrival in Toys" style="width:100%">
+        <img class="mySlides" src="resources/peauty products.jpg" alt="Peauty Products" style="width:100%">
+
+
+        <button class="slider-btn slider-btn-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="slider-btn slider-btn-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <!-- end  slider -->
+
+
+    <script src="./JavaScript/main.js"></script>
+    <script src="./JavaScript/slider.js"></script>
 
 </body>
 
