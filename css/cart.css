@@ -241,10 +241,12 @@ h1 {
 }
 
 .checkout-button {
-    max-height: 100px;
+    
     max-width: 200px;
     width: 150px;
+    
     margin-bottom: 10px;
+    margin-top: 100px;
     background-color: orange; 
     color: white; 
     padding: 10px 20px;
@@ -253,14 +255,14 @@ h1 {
     cursor: pointer; 
     transition: background-color 0.3s, transform 0.2s;
     box-shadow: 0 0.125rem 0.25rem rgba(241, 9, 9, 0.075);
-    
+  
 
 }
 .checkout-button-container{
 
-    max-height: 100px;
+    max-height: 200px;
     max-width: 300px;
-    width: 150px;
+    width: 200px;
     border: 1px solid #ddd;
     padding: 10px;
     margin-bottom: 10px;
@@ -270,8 +272,12 @@ h1 {
     background-color: rgb(215, 213, 213);
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     margin-left: 20px;
+  
     
 
+}
+.total{
+    color: #2c8511;
 }
 
 

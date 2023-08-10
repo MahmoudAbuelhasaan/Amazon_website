@@ -43,13 +43,27 @@ xhr.onload = function () {
 
             cartProducts.appendChild(cartItem);
         });
+        updateTotalPrice(products);
     } else {
         console.error("Error loading products.");
     }
 };
 xhr.send();
 
-
+function updateTotalPrice(products) {
+    var total = 0;
+  
+    cartItems.forEach(function (cartItemId) {
+      var product = products.find(function (p) {
+        return p.id == cartItemId;
+      });
+  
+      total += product.price;
+    });
+  
+    var totalPriceElement = document.querySelector("#total");
+    totalPriceElement.textContent = "$" + total.toFixed(2); // Display the total price with 2 decimal places
+  }
 
 function updateCartCount() {
     var cartItems = JSON.parse(localStorage.getItem("cart")) || [];
@@ -83,6 +97,7 @@ function updateCartCount() {
         
         
         event.target.closest(".cart-item").remove();
+        
         
         
         updateCartCount();
