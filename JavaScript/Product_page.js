@@ -1,8 +1,16 @@
-// Get the product ID from URL parameters
 var urlParams = new URLSearchParams(window.location.search);
-var productId =parseInt( urlParams.get("id"));
+var productId = parseInt(urlParams.get("id"));
 
-// Make an XMLHttpRequest to fetch product details
+var addToCartBtn = document.getElementById("add-to-cart-button");
+
+addToCartBtn.addEventListener("click", function () {
+  var cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+
+  cartItems.push(productId);
+
+  localStorage.setItem("cart", JSON.stringify(cartItems));
+});
+
 var xhr = new XMLHttpRequest();
 var url = "./pruducts.json";
 xhr.open("GET", url, true);
@@ -14,16 +22,14 @@ xhr.onreadystatechange = function () {
         return p.id === productId;
       });
 
-      // Populate product details on the page
       var productImage = document.getElementById("product_img");
       var productTitle = document.querySelector(".product-title");
-      // ... (other elements)
+      var product_desc = document.getElementById("product_desc");
 
-      // Populate the fetched product data into the page elements
       productImage.src = product.img;
       productImage.alt = product.name;
       productTitle.textContent = product.name;
-      // ... (populate other elements)
+      product_desc.textContent = product.description;
     } else {
       console.error("Failed to fetch product data.");
     }
