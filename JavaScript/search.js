@@ -56,10 +56,6 @@ function DisplayProducts(matchedProducts) {
             container.appendChild(cardDiv);
 
 
-
-
-
-
         });
     } else {
         var divNoResult = document.createElement("div");
