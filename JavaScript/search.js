@@ -1,5 +1,6 @@
 var queryString = location.search;
 var searchValue = queryString.split("=")[1].replace(/^\++|\++$/gm,'');
+searchValue = searchValue.replace(/\++/,' ');
 console.log(searchValue);
 
 var xhr = new XMLHttpRequest();
@@ -10,17 +11,18 @@ xhr.onreadystatechange = function () {
         var data = JSON.parse(ResponseData);
         var products = data.products;
         console.log(products);
-
         const lowercaseQuery = searchValue.toLowerCase();
 
         // Filter products based on the search query
         const results = products.filter(function (product) {
+
             const lowercaseName = product.name.toLowerCase();
             const lowercaseCategory = product.category.toLowerCase();
 
             // Match product name or category with the search query
             return lowercaseName.includes(lowercaseQuery) || lowercaseCategory.includes(lowercaseQuery);
         });
+        console.log(results);
         DisplayProducts(results);
     }
 }
