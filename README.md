@@ -2,6 +2,11 @@
 
 This project is a simple webpage that replicates a portion of Amazon's navigation bar and showcases various products using HTML, CSS, and JavaScript.
 
+##Contrebuters 
+-https://github.com/Hamza-mohamed
+-https://github.com/MartinaMakram1
+-https://github.com/Randa-10
+
 ## Table of Contents
 
 - [Description](#description)
@@ -15,6 +20,7 @@ This project is a simple webpage that replicates a portion of Amazon's navigatio
 
 ## Description
 
+
 This project demonstrates the creation of a webpage similar to Amazon's navigation bar. It includes a responsive navigation bar with search functionality, links, and icons. The webpage also contains image sliders and product cards to showcase different categories of products.
 
 ## Features
@@ -24,14 +30,18 @@ This project demonstrates the creation of a webpage similar to Amazon's navigati
 - Image sliders for featured products
 - Product cards with category-specific information
 - Social media links in the footer
+- bayment page
+- cart bage
+- product page
+- help page
+  
 
 ## Demo
 
-![Amazon Navbar Webpage Demo](demo.gif)
-[Live Demo](https://your-demo-link.com)
+https://mabuelhasaan-amazon.netlify.app/
 
 ## Installation
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/amazon-navbar-webpage.git
+   git clone https://github.com/MahmoudAbuelhasaan/Amazon_website.git
